@@ -1,0 +1,31 @@
+{
+    "name": "email-classifier",
+    "version": "1.0.0",
+    "description": "Sistema de Classificação Inteligente de Emails usando IA",
+    "main": "api/index.py",
+    "scripts": {
+        "build": "echo 'Build completed'",
+        "start": "python api/index.py",
+        "dev": "python run.py --full"
+    },
+    "keywords": [
+        "email",
+        "classifier",
+        "ai",
+        "nlp",
+        "machine-learning",
+        "python",
+        "flask"
+    ],
+    "author": "Seu Nome",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/seugithub/email-classifier.git"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "backend/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "backend/app.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "frontend/index.html"
+        }
+    ],
+    "functions": {
+        "backend/app.py": {
+            "runtime": "python3.9"
+        }
+    },
+    "env": {
+        "FLASK_ENV": "production"
+    }
+}

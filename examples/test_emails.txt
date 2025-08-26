@@ -1,0 +1,152 @@
+=== EMAIL PRODUTIVO - TRABALHO ===
+Assunto: Reunião de Planejamento Q4
+De: joao.silva@empresa.com
+Para: equipe@empresa.com
+
+Prezados colegas,
+
+Gostaria de agendar uma reunião para discutirmos as estratégias do próximo trimestre. 
+Precisamos definir os objetivos, metas e cronogramas para os projetos em andamento.
+
+Tópicos da reunião:
+- Revisão dos projetos atuais
+- Definição de prioridades para Q4
+- Alocação de recursos e equipes
+- Estabelecimento de deadlines
+
+Por favor, confirmem sua disponibilidade para quinta-feira às 14h.
+
+Atenciosamente,
+João Silva
+Gerente de Projetos
+
+=== EMAIL PRODUTIVO - PROFISSIONAL ===
+Assunto: Candidatura - Desenvolvedor Python
+De: maria.santos@gmail.com
+Para: rh@techcompany.com
+
+Prezados,
+
+Gostaria de me candidatar à vaga de Desenvolvedor Python anunciada em seu site.
+
+Tenho 5 anos de experiência em desenvolvimento Python, com foco em:
+- Flask e Django para desenvolvimento web
+- Processamento de dados com Pandas e NumPy
+- APIs RESTful e integração de sistemas
+- Machine Learning básico com scikit-learn
+
+Meu currículo está anexado. Estou disponível para uma entrevista a qualquer momento.
+
+Atenciosamente,
+Maria Santos
+maria.santos@gmail.com
+(11) 99999-9999
+
+=== EMAIL PRODUTIVO - COMERCIAL ===
+Assunto: Proposta de Serviços de Consultoria
+De: consultoria@business.com
+Para: diretor@empresa.com
+
+Prezado Diretor,
+
+Gostaríamos de apresentar nossa proposta de serviços de consultoria em gestão de processos.
+
+Nossa empresa tem 15 anos de experiência em:
+- Otimização de processos empresariais
+- Implementação de metodologias ágeis
+- Treinamento de equipes
+- Análise de performance organizacional
+
+Podemos agendar uma reunião para apresentarmos nossa metodologia e casos de sucesso?
+
+Aguardo seu retorno.
+
+Atenciosamente,
+Carlos Mendes
+Diretor Comercial
+consultoria@business.com
+
+=== EMAIL IMPRODUTIVO - SPAM ===
+Assunto: GANHE R$50.000 EM 24 HORAS!!!
+De: sorte@loteria.com
+Para: usuario@email.com
+
+ATENÇÃO! OPORTUNIDADE ÚNICA!
+
+Você foi selecionado para receber R$50.000 em 24 horas!
+Esta é uma oferta LIMITADA e EXCLUSIVA!
+
+Para receber seu prêmio:
+1. Clique no link abaixo
+2. Preencha seus dados
+3. Receba R$50.000 em 24 horas!
+
+⚠️ OFERTA VÁLIDA APENAS HOJE! ⚠️
+
+Clique aqui: http://bit.ly/ganhe50000
+
+Não perca esta oportunidade única!
+
+=== EMAIL IMPRODUTIVO - CORRENTE ===
+Assunto: Fwd: Reze por mim - URGENTE
+De: amigo@email.com
+Para: usuario@email.com
+
+Fwd: Reze por mim - URGENTE
+
+Esta mensagem foi enviada por uma pessoa que precisa de suas orações.
+
+Se você não rezar por ela, algo ruim pode acontecer.
+
+REZE AGORA e envie esta mensagem para 10 pessoas em 10 minutos.
+
+Se você não enviar, terá 7 anos de azar.
+
+Se enviar, terá 7 anos de sorte.
+
+PASSE ADIANTE! É URGENTE!
+
+=== EMAIL IMPRODUTIVO - MARKETING AGRESSIVO ===
+Assunto: PROMOÇÃO IMPERDÍVEL - ÚLTIMA CHANCE!
+De: vendas@loja.com
+Para: cliente@email.com
+
+🔥 PROMOÇÃO IMPERDÍVEL! 🔥
+
+ÚLTIMA CHANCE para aproveitar nossos descontos!
+
+🎯 OFERTA LIMITADA - APENAS HOJE!
+🎯 DESCONTO DE 90% EM TUDO!
+🎯 GARANTIA DE 100% DE SATISFAÇÃO!
+
+⚠️ ATENÇÃO: Esta oferta expira em 2 horas! ⚠️
+
+Não perca esta oportunidade única!
+Clique agora e aproveite!
+
+http://bit.ly/promocaoimperdivel
+
+=== EMAIL IMPRODUTIVO - PHISHING ===
+Assunto: VERIFICAÇÃO DE CONTA URGENTE
+De: suporte@banco.com
+Para: cliente@email.com
+
+ATENÇÃO: SUA CONTA FOI SUSPENSA!
+
+Por motivos de segurança, sua conta bancária foi temporariamente suspensa.
+
+Para reativar sua conta, clique no link abaixo e confirme seus dados:
+
+http://bit.ly/verificacaobanco
+
+⚠️ IMPORTANTE: Você tem apenas 2 horas para verificar sua conta, caso contrário ela será permanentemente bloqueada.
+
+Dados necessários:
+- Número da conta
+- CPF
+- Senha
+- Código de segurança
+
+Clique aqui para verificar: http://bit.ly/verificacaobanco
+
+Suporte Bancário

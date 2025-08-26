@@ -148,42 +148,75 @@ class EmailClassifier {
     }
 
     async callBackendAPI(emailContent) {
-        // Simulate API call delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        try {
+            // Determinar a URL base da API baseada no ambiente
+            const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            const apiBaseUrl = isLocalhost ? 'http://localhost:5000' : 'https://' + window.location.hostname;
 
-        // Mock response - replace with actual API call
-        if (emailContent === 'PDF_FILE_CONTENT') {
+            // Fazer chamada real para a API
+            const response = await fetch(`${apiBaseUrl}/api/analyze`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    content: emailContent
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`Erro da API: ${response.status}`);
+            }
+
+            const result = await response.json();
+
+            if (result.success) {
+                return {
+                    category: result.category,
+                    confidence: result.confidence,
+                    response: result.response
+                };
+            } else {
+                throw new Error(result.error || 'Erro desconhecido da API');
+            }
+
+        } catch (error) {
+            console.error('Erro na chamada da API:', error);
+
+            // Fallback para lógica local se a API falhar
+            if (emailContent === 'PDF_FILE_CONTENT') {
+                return {
+                    category: 'produtivo',
+                    confidence: 0.87,
+                    response: 'Este é um email profissional relacionado ao trabalho. Recomendo responder de forma cordial e objetiva, agradecendo o contato e solicitando mais detalhes se necessário.'
+                };
+            }
+
+            // Lógica de classificação local como fallback
+            const productiveKeywords = ['reunião', 'projeto', 'trabalho', 'negócio', 'cliente', 'relatório', 'deadline', 'estratégia'];
+            const unproductiveKeywords = ['corrente', 'sorte', 'fwd:', 'reencaminhar', 'spam', 'loteria', 'promoção'];
+
+            const lowerContent = emailContent.toLowerCase();
+            let productiveScore = 0;
+            let unproductiveScore = 0;
+
+            productiveKeywords.forEach(keyword => {
+                if (lowerContent.includes(keyword)) productiveScore++;
+            });
+
+            unproductiveKeywords.forEach(keyword => {
+                if (lowerContent.includes(keyword)) unproductiveScore++;
+            });
+
+            const isProductive = productiveScore > unproductiveScore;
+            const confidence = Math.min(0.95, 0.7 + Math.abs(productiveScore - unproductiveScore) * 0.1);
+
             return {
-                category: 'produtivo',
-                confidence: 0.87,
-                response: 'Este é um email profissional relacionado ao trabalho. Recomendo responder de forma cordial e objetiva, agradecendo o contato e solicitando mais detalhes se necessário.'
+                category: isProductive ? 'produtivo' : 'improdutivo',
+                confidence: confidence,
+                response: this.generateResponse(isProductive, emailContent)
             };
         }
-
-        // Simple classification logic for demo
-        const productiveKeywords = ['reunião', 'projeto', 'trabalho', 'negócio', 'cliente', 'relatório', 'deadline', 'estratégia'];
-        const unproductiveKeywords = ['corrente', 'sorte', 'fwd:', 'reencaminhar', 'spam', 'loteria', 'promoção'];
-
-        const lowerContent = emailContent.toLowerCase();
-        let productiveScore = 0;
-        let unproductiveScore = 0;
-
-        productiveKeywords.forEach(keyword => {
-            if (lowerContent.includes(keyword)) productiveScore++;
-        });
-
-        unproductiveKeywords.forEach(keyword => {
-            if (lowerContent.includes(keyword)) unproductiveScore++;
-        });
-
-        const isProductive = productiveScore > unproductiveScore;
-        const confidence = Math.min(0.95, 0.7 + Math.abs(productiveScore - unproductiveScore) * 0.1);
-
-        return {
-            category: isProductive ? 'produtivo' : 'improdutivo',
-            confidence: confidence,
-            response: this.generateResponse(isProductive, emailContent)
-        };
     }
 
     generateResponse(isProductive, content) {
